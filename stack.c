@@ -6,14 +6,14 @@ int main() {
     int *sp = stack;
 
     printf("%d\n", *sp);
-    *sp = 22;
-    printf("%d %d\n", *sp, sp);
-    sp ++;
-    printf("%d %d\n", *sp, sp);
-    sp --;
-    printf("%d %d\n", *sp, sp);
+    *sp = 22; 
+    printf("%d %p\n", *sp, sp);
+    sp ++; 
+    printf("%d %p\n", *sp, sp);
+    sp --; 
+    printf("%d %p\n", *sp, sp);
 
-    printf("%d", stack);
+    printf("%p", stack);
 
     free(stack);
 }
